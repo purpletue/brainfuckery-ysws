@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Syne:wght@800&display=swap');
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('bfbg.png');
+    background-size: cover;       /* Stretches the image to cover the whole screen */
+    background-position: center;  /* Keeps the image centered */
+    background-repeat: no-repeat; /* Prevents the image from tiling */
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Syne', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding-top: 100px;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 70px;
+}
+
+.logo svg {
+    width: 150%;
+    height: auto;
+}
+
+h1 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 5rem;
+    letter-spacing: -0.03em;
+}
+
+p {
+    color: #ffffff;
+}
+
+.squircle-btn {
+    display: inline-block;
+    background-color: rgba(145, 145, 145, 0.155); /* Translucent red */
+    backdrop-filter: blur(8px);
+    color: white;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 14px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.squircle-btn:hover {
+    background-color: rgba(140, 140, 140, 0.208);
+    transform: translateY(-2px);
+}
+
+.faq-item {
+    background-color: rgba(26, 26, 26, 0.65); /* Translucent dark box */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle semi-transparent border */
+    border-radius: 14px;
+    margin-bottom: 15px;
+    padding: 20px;
+    font-family: 'JetBrains Mono', monospace;
+    text-align: left;
+    transition: background-color 0.2s ease;
+}
+
+.faq-item[open] {
+    background-color: rgba(34, 34, 34, 0.85); /* Slightly less transparent when open */
+}
+
+.faq-item summary {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #ffffff;
+    cursor: pointer;
+    list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item p {
+    color: #cccccc;
+    margin-top: 15px;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
