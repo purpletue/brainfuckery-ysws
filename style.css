@@ -6,7 +6,8 @@ body {
     background-position: center; 
     background-repeat: no-repeat;
     background-attachment: scroll;
-    color: black;
+    background-color: black;
+    color: white;
     font-family: 'Syne', sans-serif;
     text-align: center;
     margin: 0;
