@@ -2,15 +2,16 @@
 
 body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('bfbg.png');
-    background-size: cover;       /* Stretches the image to cover the whole screen */
-    background-position: center;  /* Keeps the image centered */
-    background-repeat: no-repeat; /* Prevents the image from tiling */
-    background-attachment: fixed;
+    background-size: cover;   
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: scroll;
     color: white;
     font-family: 'Syne', sans-serif;
     text-align: center;
     margin: 0;
     padding-top: 100px;
+    min-height: 100%
 }
 
 .logo {
