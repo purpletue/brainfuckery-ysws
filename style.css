@@ -55,15 +55,16 @@ p {
 }
 
 .faq-item {
-    background-color: rgba(26, 26, 26, 0.65); /* Translucent dark box */
-    backdrop-filter: blur(10px); /* Frosted glass effect */
-    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle semi-transparent border */
+    background-color: rgba(26, 26, 26, 0.65); 
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 14px;
     margin-bottom: 15px;
     padding: 20px;
     font-family: 'JetBrains Mono', monospace;
     text-align: left;
     transition: background-color 0.2s ease;
+    max-width: 800px
 }
 
 .faq-item[open] {
@@ -88,4 +89,33 @@ p {
     margin-top: 15px;
     margin-bottom: 0;
     line-height: 1.5;
+}
+@media (max-width: 600px) {
+    body {
+        padding: 90px 20px 40px;
+        background-attachment: scroll;
+    }
+
+    h1 {
+        font-size: 3rem;
+        line-height: 1;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .faq-item {
+        padding: 16px;
+    }
+
+    .faq-item summary {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .faq-item p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
 }
